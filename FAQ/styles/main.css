@@ -1,0 +1,119 @@
+ * {
+    box-sizing: border-box !important;
+
+ }
+ 
+
+ @font-face {
+    font-family: workSans-Regular;
+    src: url('../assets/fonts/static/WorkSans-Regular.ttf');
+ }
+
+ @font-face {
+    font-family: workSans-Bold;
+    src: url('../assets/fonts/static/WorkSans-Bold.ttf');
+ }
+
+ @font-face {
+    font-family: workSans-semiBold;
+    src: url('../assets/fonts/static/WorkSans-SemiBold.ttf');
+ }
+
+body{
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background-color: #f9eefe;
+}
+
+img.pattern{    
+    height: 320px;
+    position: absolute;
+    top: 0;
+}
+
+.card {
+    position: absolute;
+    width: 600px;
+    height: 565px;    
+    border-radius: 16px;
+    background-color: white;
+}
+
+.card-content {
+    margin: 0 40px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+    padding-inline: 10px;
+    padding-top: 20px;
+}
+
+.card-title img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-title h1 {
+    font-size: 40px;
+}
+
+.card-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;   
+    font-family: workSans-Bold;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    color: #301534;
+}
+
+.icon-minus{
+    display: none;
+}
+
+
+.card-answer p {
+    color:  #8B6990;
+    font-family: workSans-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.card-answer {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+
